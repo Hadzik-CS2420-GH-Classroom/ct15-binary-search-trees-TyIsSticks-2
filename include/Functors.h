@@ -25,7 +25,7 @@
 struct PrintFunctor {
     void operator()(int value) {
         std::cout << value << " ";
-    }
+	} // You can do this without a functor, but then you have to hardcode std::cout into the traversal method, which is less flexible.
 };
 
 // ---------------------------------------------------------------------------
